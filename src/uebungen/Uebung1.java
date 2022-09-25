@@ -1,6 +1,7 @@
 
 /*
  * Uebung zu schleifen und rekursion
+ * Abgabe per Discord in meine DMs
  * 
  * Punkte Gesamt: 18
  * Abgabe spaetestens: 02.10.2022 (Dann werden Loesungen veroeffentlicht)
@@ -35,19 +36,19 @@ public class Uebung1 {
 	}
 	
 	// Punkte 8
-	public static void schwer_rekursion(int i, int x) {
+	public static void schwer_schleifen(int x) {
 		/**
-		 * Gebe alle Zahlen von 1 bis x aus, die nicht durch 2 Teilbar sind.
+		 * Gebe alle Primzahlen aus von 2 bis 'x'
+		 * Achte darauf das 'x' sinvoll ist
 		 * 
-		 * Es darf KEINE Schleife verwendet werden.
+		 * TIPP: Du kannst den Algo in eine seperate Methode auslagern
+		 * TIPP: Fuer X kann zum testen 100 verwendet werden.
+		 * TIPP: Es duerfen mehrere Schleifen verwendet werden
+		 * TIPP: Zum wurzel ziehen kann `Math.sqrt(x)` verwendet werden
 		 * 
-		 * Tipp: Erstelle eine Methode mit der definition:
+		 * Es duerfen keine Arrays verwendet werden
 		 * 
-		 * `public static void schwer_rekursion(int i, int x) {}`
-		 * 
-		 * Tipp: Zum Testen kannst du `schwer_rekursion(0, 100);` aufrufen
-		 * 
-		 * Es duerfen nur eingefuehrte Operationen verwendet werden. (Siehe Paket Einfuehrung)
+		 * Darueberhinaus duerfen nur eingefuehrte Operationen verwendet werden. (Siehe Paket Einfuehrung)
 		 */
 	}
 }
