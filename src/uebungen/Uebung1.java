@@ -12,7 +12,10 @@ public class Uebung1 {
 		/**
 		 * Gebe alle Zahlen von 1 bis 100 aus. 
 		 * 
-		 * Das print statement darf nur einmal verwendet werden. 
+		 * Das print statement darf nur einmal verwendet werden.
+		 * 
+		 * EDIT: Die Ergebnisse duerfen nicht in eine String hardcoded werden
+		 * EDIT: Es muss eine Schleife sinvoll verwendet werden
 		 * 
 		 * Es duerfen nur eingefuehrte Operationen verwendet werden. (Siehe Paket Einfuehrung)
 		 */
