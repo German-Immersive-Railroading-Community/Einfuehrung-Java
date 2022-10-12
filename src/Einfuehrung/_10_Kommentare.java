@@ -1,6 +1,6 @@
 package Einfuehrung;
 
-public class _91_Kommentare {
+public class _10_Kommentare {
 
 	public static void main(String[] args) {
 /*
