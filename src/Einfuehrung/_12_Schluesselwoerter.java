@@ -13,10 +13,9 @@ public class _12_Schluesselwoerter {
  * 	final		- die Variable oder der Parameter ist festgelegt und kann nicht mehr verändert werden 
  * 				- die Methode ist festgelegt und kann durch eine andere Methode mit @Override nicht überschrieben werden
  * 				- die Klasse ist festgelegt, von ihr kann nicht geerbt werden
- * 	@Override	- die nachfolgende Methode überschreibt andere Methoden mit selbem Namen, selben Modifizieren und selben Übergabewerten (alles muss gleich sein)
+ * 	@Override	- die nachfolgende Methode überschreibt eine andere Methode mit selbem Namen, selben Modifizieren und selben Übergabewerten (alles muss gleich sein) aus der Mutterklasse
  * 	break		- die Schleife wird abgebrochen - der nachfolgende Code innerhalb der Schleife wird nicht mehr ausgeführt
  * 	continue	- die Schleife startet einen neuen durchlauf - der nachfolgende Code innerhalb der Schleife wird in diesem Durchlauf nicht mehr ausgeführt
- * 	new			- erzeugt ein neues Objekt
  * 	import		- importiert andere Klassen, so dass sie (und ihre Methoden) in dieser Klasse genutzt werden können
  * 	package		- gibt die Paketzugehörigkeit der Klasse an
  * 
