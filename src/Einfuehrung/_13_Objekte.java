@@ -11,7 +11,8 @@ public class _13_Objekte {
 	
 	
 	// Der Konstruktor ist der Initialaufruf unseres erstellten Objektes, in ihm werden alle Atribute uebergeben oder standartmaessig auf einen Wert gesetzt.
-	public void _13_objekte (int geschosse, String strassenname, int hausnummer, boolean aufzug) {
+	// Er heisst EXAKT so wie die Klasse, damit er bei Erstellung eines Objektes automatisch gerufen wird
+	public _13_Objekte (int geschosse, String strassenname, int hausnummer, boolean aufzug) {
 		this.geschosse = geschosse;					// Das Schluesselwort "this" gibt eine Referenz auf das Objekt zurueck
 		this.strassenname = strassenname;			// So koennen z.B. Nameskonflikte zwischen globalen und lokalen Variablen aufgeloest werden.
 		this.hausnummer = hausnummer;				// Die Methode bedient sich immer zuerst der lokalen Variablen, wenn sich dort keine findet, dann den Globalen 
@@ -62,17 +63,14 @@ public class _13_Objekte {
 public class Main {
 	public static void main (String[] args) {
 		
-		_13_Objekte einfamilienhaus = new _13_Objekte();
+		_13_Objekte einfamilienhaus = new _13_Objekte(3, "Bahnhofstrasse", 1, false);
 													// Mit "new" koennen wir nun ein neues Objekt erstellen. Dieses besitz noch keine Werte, es wurde nur Speicher
 													// fuer dieses reserviert.
 													// die erste "_13_Objekte" bezieht sich auf die Klasse, in der der "Bauplan" für das Objekt liegt. Ist diese
 													// in einem anderen package, so muessen wir diese erst mit "import [package-name].[klassen-name]" importieren.
-		einfamilienhaus._13_objekte(3, "Bahnhofstrasse", 1, false);
-													// direkt nach Erstellung des Objekts wird der Konstruktor gerufen, dem die spezifischen Werte dieses Objektes 
-													// übergeben werden.
-		_13_Objekte hochhaus = new _13_Objekte();
-		hochhaus._13_objekte(50, "Zentrumsstrasse", 1, true);
-													// werden mehrere Objekte desselben Typs erstellt, so kommt sofort nach Anlegung des Objektes der Konstruktor!
+													// direkt nach Erstellung des Objekts wird automatischder Konstruktor gerufen, dem die spezifischen Werte dieses 
+													// Objektes übergeben werden (also in der Klammer des neuen Objektes).
+		_13_Objekte hochhaus = new _13_Objekte(50, "Zentrumsstrasse", 1, true);
 		hochhaus.setGeschosse(52);					// wird das Hochhaus erweitert, so kann ueber die set-Methode der neue Variablenwert DIESES Objektes eingetragen werden.
 		System.out.println(hochhaus.getGeschosse());// mit get sieht man, dass die Aenderung uebernommen wurde
 													// !Das geht hier nicht, da zwei Klassen in einem file liegen!
