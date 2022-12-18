@@ -21,10 +21,10 @@ public class _20_Printf {
 		// %d - Integer, %s - Strings, %c - Charakters, %b - Booleans, %f - Floats und Doubles , %p - Speicheraddressen
 		System.out.println();
 		
-		System.out.printf("\t \" \' \n"); // \t springt an die nächste Tabulatorposition, \" gibt Anführungszeichen aus ohne den String zu beenden
-										  // \' gibt einen Abostroph aus ohne den Charakter zu beenden, \n springt in eine neue Zeile
+		System.out.printf("\t \" \' \n"); 			// \t springt an die nächste Tabulatorposition, \" gibt Anführungszeichen aus ohne den String zu beenden
+										  			// \' gibt einen Abostroph aus ohne den Charakter zu beenden, \n springt in eine neue Zeile
 		
-		System.out.printf("\\ %% \n");		  // \\ gibt den Gegenschrägstrich (Backslash) aus, %% gibt das Prozentzeichen aus
+		System.out.printf("\\ %% \n");		 		// \\ gibt den Gegenschrägstrich (Backslash) aus, %% gibt das Prozentzeichen aus
 		
 		System.out.print("a + b = " + a+b); System.out.printf("  vs  a + b = %d\n", a+b);
 		// Durch die Übergabe als Parameter und nicht als String sind auch Berechnungen möglich
@@ -33,7 +33,11 @@ public class _20_Printf {
 		// Man kann auch Zahlen formatieren: .2 - 2 Nachkommastellen (nur float oder double), 10 - für diesen Parameter 10 Stellen reservieren
 		// (nicht gebrauchte werden mit Leerzeichen aufgefüllt), 010 für diesen Parameter 10 Stellen reservieren (nicht gebrauchte werden mit '0' aufgefüllt)
 		
-		// Für weitere DEtails schaut euch die Wikipedia-Seite zu "printf" an.
+		System.out.printf("\nUnicode: \u0040");		// Mit \ u und einer 4-stelligen Hexadezimal Zahl könnt ihr des Zeichen der Zeichentabelle (einfach mal
+													// in der Suchleiste des Computer suchen) darstellen
+		
+		// Für weitere Details schaut euch die Wikipedia-Seite zu "printf" an.
+		
 	}
 
 }
