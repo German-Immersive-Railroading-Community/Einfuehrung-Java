@@ -27,6 +27,7 @@ public class _12_Schluesselwoerter {
  *  static		- die Methode ist nicht Objekt zugehörig und bezieht sich nur auf die Klasse: Änderungen durch diese Methode werden auf alle Objekte der Klasse angewendet
  *  abstract	- die Klasse dient als reine "Bereitstellungsklasse" für Methoden und Attribute der Subklassen: von ihr kann kein objekt erstellt werden
  *  extends		- die Klasse (Subklasse) erweitert eine Superklasse
+ *  implements	- die Klasse implementiert ein Interface
  * 
  * eine vollständige Liste der Schlüsselworte gibt es hier: https://de.wikibooks.org/wiki/Java_Standard:_Schlüsselwörter
  */
