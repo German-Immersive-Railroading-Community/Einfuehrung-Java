@@ -31,17 +31,22 @@ public class _9_Arrays {
 
 */
 		int[][] mehrDimArray1= {{1,2,3},{4,5,6},{7,8,9}};		// Arrays können auch zwei oder mehr (bis unendlich) Dimensionen haben
-		int[][] mehrDimArray2 = new int[3][4];					// Man muss sich das vorstellen, wie in Index 0 liegt ein zweites Array von 0-2,
+		int[][] mehrDimArray2 = new int[2][];					// Bei mehrdimensionalen Arrays muss anfangs(!) nur das äußerste Array eine Größe bekommen
+		mehrDimArray2[0] = new int[5];							// Man kann so jedem Index des äußeren Array eine eigene Größe das inneren Arrays zuweisen.
+		mehrDimArray2[1] = new int[3];							// Heißt: im Index 0 liegt ein Array der Größe 5, im Index 1 aber nur ein Array der Größe 3
+		int[][] mehrDimArray3 = new int[3][4];					// Mit dieser Schreibweise wird jedem Index ein inneres Array mit gleicher Größe zugewiesen
+																// Man muss sich das vorstellen, wie in Index 0 liegt ein zweites Array von 0-2,
 																// in Index 1 und 2 ebenso (s.B.)
 
 /*		äußeres Array		[0]		[1]			[2]
 		inneres Array	[0][1][2] [0][1][2] [0][1][2]
 		Inhalt			 a  b  c   d  e  f   g  h  i
 */
-		mehrDimArray2[2][0] = 45;								// mit Angabe der Indexe kann auf mehrdimensionale Arrays genauso zugegriffen werden, wie auf Eindimensionale
+		mehrDimArray3[2][0] = 45;								// mit Angabe der Indexe kann auf mehrdimensionale Arrays genauso zugegriffen werden, wie auf Eindimensionale
 		System.out.println();
 		System.out.println("Länge außen: " + mehrDimArray2.length);	// die length-Methode greift immer nur auf das äußerste Array zu
 		System.out.println("Länge innen: " + mehrDimArray2[0].length);// für die Länge des inneren Arrays ist die Angabe eines Indexes notwendig
+		System.out.println("Länge innen: " + mehrDimArray2[1].length);// hier seht ihr, dass die Größen wirklich unterschiedlich sind
 	}
 
 }
