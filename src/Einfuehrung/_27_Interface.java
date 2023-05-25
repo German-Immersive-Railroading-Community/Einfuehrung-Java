@@ -46,6 +46,6 @@ public class Main {
 		_27_Interface hund2 = new Hunde();							// Ein Interface kann auch als Objekt-"Klasse" (hier natürlich "Objekt-Interface") eingesetzt werden.
 		hund2.setName("wuffi");										// Dem Objekt stehen dann nur die Methoden des Interfaces zur Verfügung.
 		System.out.println(hund2.getName());
-		hund2.setAlter;
+		hund2.setAlter(2);											// da "hund2" von Typ _27_Interface ist, ist die Methode setAlter() nicht sichtbar
 	}
 }
